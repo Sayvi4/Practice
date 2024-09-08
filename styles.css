@@ -1,0 +1,37 @@
+.flex-container {
+
+    display: flex;
+    height:80px;
+    width: 100px;
+    background-color: rgb(27, 168, 168);
+    text-align: center;
+}
+
+.flex-container > div {
+
+    background-color: rgb(133, 45, 45);
+    width: 60;
+    margin: 10;
+    text-align: center;
+    line-height: 40;
+    font-size: 50px;
+    color:blue ;
+}
+
+.tilin {
+    color:rgb(119, 31, 190);
+    display: flex;
+    text-align: center;
+    
+}
+
+#txt {
+    color:rgb(255, 255, 255);
+    text-align: center;
+    width: 90px;
+    height: 40px;
+    padding: 9px;
+    border: 1px solid black;
+    
+}
+
