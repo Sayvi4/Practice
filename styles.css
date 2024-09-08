@@ -1,13 +1,13 @@
 .flex-container {
 
     display: flex;
-    height:80px;
+    height: 80px;
     width: 100px;
     background-color: rgb(27, 168, 168);
     text-align: center;
 }
 
-.flex-container > div {
+.flex-container>div {
 
     background-color: rgb(133, 45, 45);
     width: 60;
@@ -15,23 +15,101 @@
     text-align: center;
     line-height: 40;
     font-size: 50px;
-    color:blue ;
+    color: blue;
 }
 
 .tilin {
-    color:rgb(119, 31, 190);
+    background-color: burlywood;
+    color: rgb(119, 31, 190);
     display: flex;
-    text-align: center;
+    position: relative;
+    width: 200px;
+    height: 20;
+    padding: 20px;
     
+
 }
 
 #txt {
-    color:rgb(255, 255, 255);
+    color: rgb(255, 255, 255);
     text-align: center;
     width: 90px;
     height: 40px;
     padding: 9px;
     border: 1px solid black;
-    
+
 }
 
+.logobox {
+    background-color: rgb(34, 88, 88);
+    width: 1;
+    height: 70px;
+    margin: 0;
+}
+
+#logo {
+    width: 90px;
+    height: 70px;
+}
+
+#Veri {
+    position: relative;
+
+}
+
+.sidebar {
+    margin: 0;
+    padding: 0;
+    width: 200px;
+    background-color: #f1f1f1;
+    position: fixed;
+    height: 100%;
+    overflow: auto;
+}
+
+.sidebar a {
+    display: block;
+    color: black;
+    padding: 16px;
+    text-decoration: none;
+}
+
+.sidebar a.active {
+    background-color: #04AA6D;
+    color: white;
+}
+
+/* :hover and hover:not son cuando el mouse pasa por el elemento */
+.sidebar a:hover:not(.active) {
+    background-color: #555;
+    color: white;
+}
+
+div.content {
+    margin-left: 200px;
+    padding: 1px 16px;
+    height: 1000px;
+}
+
+@media screen and (max-width: 700px) {
+    .sidebar {
+        width: 100%;
+        height: auto;
+        position: relative;
+    }
+
+    .sidebar a {
+        float: left;
+    }
+
+    div.content {
+        margin-left: 0;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .sidebar a {
+      text-align: center;
+      float: none;
+    }
+}
